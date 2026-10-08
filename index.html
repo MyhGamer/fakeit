@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake it. — Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --panel-2: #1f2937;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #22c55e;
+        --accent-soft: rgba(34, 197, 94, 0.12);
+        --border: rgba(255,255,255,0.08);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #0b1020 0%, #111827 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      .container {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      .header {
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 28px;
+        padding-bottom: 20px;
+      }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin: 0 0 8px;
+        line-height: 1.2;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .card {
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 26px 28px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      }
+      h2 {
+        font-size: 1.4rem;
+        margin-top: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+      p, li {
+        color: var(--text);
+        font-size: 1.02rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: #7dd3fc;
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .footer {
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      @media (max-width: 640px) {
+        .card { padding: 20px 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Fake it.</h1>
+        <div class="meta">Privacy Policy</div>
+        <div class="meta">Last updated: October 8, 2026</div>
+      </div>
+
+      <div class="card">
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how information is handled by the Fake it. Android app, a creative editor for fictional wallet screenshots, profit and loss (PnL), trading positions, and prediction market mockups.</p>
+
+        <h2>2. Editing and Information You Provide</h2>
+        <p>You can enter balances, token quantities, prices, profits, losses, probabilities, position details, names, labels, referral text, and other mockup content. You can also select images, such as avatars and token icons, from your device.</p>
+        <p>Editing, calculations, and image generation take place on your device. The App does not have an operator-hosted backend that receives your drafts or generated screenshots. External requests for market data and images are described below; this does not mean that all App activity stays offline.</p>
+        <p>Use fictional information where possible. Do not enter passwords, wallet seed phrases, private keys, or other sensitive information. Names, photos, and other identifying information you choose to include may be visible in exported images.</p>
+
+        <h2>3. Accounts and Wallet Connections</h2>
+        <p>The App does not require registration or an account. It does not connect to cryptocurrency wallets, request wallet signatures, access private keys, or execute transactions. Entering a token contract address is a public token lookup, not a wallet connection or a lookup of your actual holdings.</p>
+
+        <h2>4. External Market Data and Images</h2>
+        <p>The App uses third-party services to retrieve public token metadata, reference prices, market lists, and images:</p>
+        <ul>
+          <li>DEX Screener: Solana token addresses, names, symbols, prices, and token images.</li>
+          <li>GeckoTerminal: fallback token metadata, prices, and images.</li>
+          <li>Jupiter: fallback token metadata and images.</li>
+          <li>Hyperliquid: public market catalog and reference prices, plus coin logos hosted on its website.</li>
+          <li>Image hosts identified in token metadata: downloading token icons.</li>
+        </ul>
+        <p>A token lookup sends the token address to the relevant provider. Hyperliquid market requests ask for public market information; they do not send the mock position amounts, entry prices, or PnL you enter. Requests for remote images send the requested image URL or asset identifier to its host.</p>
+        <p>Some requests occur automatically when an editor opens, including market loading and retrieving missing preset token icons. Remote resources may also be requested during preview or export. Requests expose ordinary network information to the receiving service, such as your IP address, request time, requested resource, and HTTP request metadata. These services may maintain their own logs and process information under their own policies. The App operator does not control their retention practices.</p>
+        <p>Provider information:</p>
+        <ul>
+          <li>DEX Screener privacy policy: <a href="https://docs.dexscreener.com/privacy/privacy-policy" target="_blank" rel="noopener noreferrer">https://docs.dexscreener.com/privacy/privacy-policy</a></li>
+          <li>GeckoTerminal privacy policy: <a href="https://www.geckoterminal.com/privacy-policy" target="_blank" rel="noopener noreferrer">https://www.geckoterminal.com/privacy-policy</a></li>
+          <li>Jupiter website: <a href="https://jup.ag" target="_blank" rel="noopener noreferrer">https://jup.ag</a></li>
+          <li>Hyperliquid website: <a href="https://app.hyperliquid.xyz" target="_blank" rel="noopener noreferrer">https://app.hyperliquid.xyz</a></li>
+        </ul>
+        <p>Real reference prices may be used in the editor, but the holdings and positions you construct are simulated.</p>
+
+        <h2>5. Local Drafts and Caches</h2>
+        <p>The App uses local WebView storage to save editor drafts, selected settings, token metadata and icons, and cached market information. Drafts may contain the text, numbers, token addresses, and selected images you added. Uploaded images may be stored as resized copies in drafts.</p>
+        <p>Drafts and caches remain until replaced, cleared, or removed with App data. Cache freshness periods do not necessarily mean the stored data is automatically deleted after that period.</p>
+        <p>To remove local drafts and caches, use Android Settings → Apps → Fake it. → Storage, then clear the App's storage or data. Menu names vary by device. Uninstalling normally removes local App data, although device backup or restoration may restore previously saved data.</p>
+
+        <h2>6. Exported Images and Sharing</h2>
+        <p>Screenshots are generated locally. Saving an image on supported Android versions writes it to the device's media collection, normally under Pictures/Fake it. Saved images are not automatically uploaded to the App operator.</p>
+        <p>Using Share creates a temporary local image and opens Android's share chooser. If you complete sharing, the app or service you select receives the image and handles it under its own policies. Preparing a share does not itself mean the operator receives the image.</p>
+        <p>Temporary share files can remain in the App cache. The App removes older share files when preparing a later share; clearing App data also removes its cache.</p>
+        <p>Saved gallery images remain separate from App data. Clearing App storage or uninstalling does not necessarily delete them. Delete those images through your gallery or file manager. Gallery or photo backup services may upload exported images depending on your device settings.</p>
+
+        <h2>7. Android Backup and Device Permissions</h2>
+        <p>Android backup is enabled in the App configuration. Depending on your Android version, device, account, and backup settings, local App data may be included in operating-system backups or device transfers. Those processes are controlled by your device and backup provider, not by an App-operated screenshot server. Manage backups through your device or backup account settings.</p>
+        <p>The App uses internet access for external resources and vibration for feedback. It does not request access to contacts, location, the camera, or your entire photo library. When you select an image through the system picker, the App receives the selected file.</p>
+
+        <h2>8. Analytics, Advertising, and Diagnostics</h2>
+        <p>The current App does not include an analytics SDK, advertising SDK, or crash-reporting service that sends reports to the App operator. It does not use an account system to track your editing activity. External services can still receive network information as described above. Android, your device manufacturer, or the distribution store may separately process diagnostics under their own settings and policies.</p>
+
+        <h2>9. Support Communications</h2>
+        <p>If you email ackkodturkey@gmail.com, your email address, message, attachments, and any information you voluntarily provide are processed to respond to your request. Support email is handled using Gmail, subject to Google's policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+        <p>Please do not send seed phrases, private keys, passwords, or unnecessary sensitive information. Support messages may be retained as needed to handle the request, follow-up, or applicable legal obligations. You may contact us to request deletion of support information, subject to any lawful retention requirements.</p>
+
+        <h2>10. Retention and Your Choices</h2>
+        <p>The operator does not maintain a server-side collection of your drafts or screenshots. Local drafts and caches can be removed as described above. Exported images, device backups, shared copies, and third-party request logs have separate retention and deletion controls.</p>
+        <p>The operator cannot remotely access or erase drafts stored only on your device, copies you shared with others, or records independently retained by external providers. Contact the relevant provider or use its settings where appropriate.</p>
+        <p>Depending on applicable law, you may have rights concerning personal information, including access, correction, deletion, or restriction of processing. For information handled through support, contact the email below. We will handle applicable requests within legally required timeframes.</p>
+
+        <h2>11. Security and International Processing</h2>
+        <p>Local processing reduces the need to transmit editor content, but no device, storage system, or network is completely secure. Protect your device and consider what is visible before sharing an image. External providers and email services may process information in countries other than your own, according to their policies.</p>
+
+        <h2>12. Children's Privacy</h2>
+        <p>Fake it. is not intended for children under 13. We do not knowingly seek to collect personal information from children under 13. If you believe such information has been provided through support, contact us so we can address it as required by applicable law.</p>
+
+        <h2>13. Changes</h2>
+        <p>We may update this Policy when the App or its data practices change. The updated Policy will show a new revision date.</p>
+
+        <h2>14. Contact</h2>
+        <p>App: Fake it.<br />Email: ackkodturkey@gmail.com</p>
+      </div>
+    </div>
+  </body>
+</html>
